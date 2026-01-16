@@ -3219,3 +3219,30 @@ input, select, textarea {
 			}
 
 	}
+
+/* Portfolio Section Background */
+#two {
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding: 4em 2em;
+	position: relative;
+}
+
+#two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.85);
+	z-index: 1;
+}
+
+#two > * {
+	position: relative;
+	z-index: 2;
+}
